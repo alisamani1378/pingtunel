@@ -59,7 +59,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/alisamani1378/pingtunel/main/s
 ### ۲.۲. برای سرورهای داخل ایران
 این دستور فایل‌ها را از **سرور آینه ایرانی** که در مرحله قبل ساختید، دانلود و اجرا می‌کند:
 ```bash
-bash <(curl -Ls http://<IRAN_MIRROR_IP>:8000/setup.sh)
+bash <(curl -Ls http://193.151.151.78:8000/setup.sh)
 ```
 **نکته مهم:** به جای `<IRAN_MIRROR_IP>` آی‌پی عمومی سرور آینه خود در ایران را قرار دهید.
 
