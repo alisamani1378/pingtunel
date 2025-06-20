@@ -53,7 +53,7 @@
 ### ۲.۱. برای سرورهای خارج از ایران
 این دستور فایل‌ها را مستقیماً از مخزن گیت‌هاب شما دانلود و اجرا می‌کند:
 ```bash
-bash <(curl -Ls [https://raw.githubusercontent.com/alisamani1378/pingtunel/main/setup.sh])
+bash <(curl -Ls https://raw.githubusercontent.com/alisamani1378/pingtunel/main/setup.sh)
 ```
 
 ### ۲.۲. برای سرورهای داخل ایران
