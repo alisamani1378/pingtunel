@@ -3,11 +3,11 @@
 # --- Step 1: Configuration and Prerequisite Checks ---
 
 # --- !!! CONFIGURATION REQUIRED !!! ---
-# لطفا قبل از استفاده، این متغیر را با آی‌پی سرور آینه خود در ایران جایگزین کنید
+# Please replace the <YOUR_IRAN_MIRROR_IP> placeholder below with the IP of your mirror server in Iran before using.
 IRAN_MIRROR_URL="http://<YOUR_IRAN_MIRROR_IP>:8000/pingtunnel"
 # --- !!! END OF CONFIGURATION !!! ---
 
-# لینک دانلود عمومی از گیت‌هاب
+# Public download link from GitHub
 GITHUB_URL="https://raw.githubusercontent.com/alisamani1378/pingtunel/main/pingtunnel"
 
 # Check if the script is run as root
@@ -55,11 +55,11 @@ echo "Moved 'pingtunnel' binary to /root/pingtunnel"
 # (The rest of the script is the same as before)
 
 echo ""
-echo "لطفا نوع نصب را انتخاب کنید:"
-echo "   1) راه اندازی به عنوان سرور خارج (Server / Kharej)"
-echo "   2) راه اندازی به عنوان کلاینت ایران (Client / Iran)"
+echo "Please select the installation type:"
+echo "   1) Setup as Server (for the machine outside Iran)"
+echo "   2) Setup as Client (for the machine inside Iran)"
 echo ""
-read -p "عدد مورد نظر را وارد کنید [1-2]: " choice
+read -p "Enter your choice [1-2]: " choice
 
 case "$choice" in
     1)
@@ -121,7 +121,7 @@ EOL
         ;;
     *)
         # Invalid Input
-        echo "ورودی نامعتبر است. لطفا اسکریپت را مجددا اجرا کرده و عدد 1 یا 2 را وارد کنید."
+        echo "Invalid input. Please run the script again and enter 1 or 2."
         rm -rf /tmp/pt_setup
         exit 1
         ;;
